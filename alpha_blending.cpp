@@ -12,16 +12,17 @@ void Alpha_blending(sf::Uint8* back, sf::Uint8* front, \
             sf::Uint8* current_back  = back  + ((back_y  * size_back.x  + back_x)  << 2);
             sf::Uint8* current_front = front + ((front_y * size_front.x + front_x) << 2);
 
-            sf::Uint8 balpha = current_front[3];
+            sf::Uint8 alpha256 = current_front[3];
 
-            if (balpha != 0)
+            if (alpha256 != 0)
             {
-                float not_alpha = 1.0f - (float)((double)(balpha) * (1.0f / 255.f));
+                float alpha = (float)((double)(alpha256) * (1.0f / 255.f));
+                float not_alpha = 1.0f - alpha;
 
-                current_back[0] = lround(float(current_back[0] * not_alpha) + current_front[0]);
-                current_back[1] = lround(float(current_back[1] * not_alpha) + current_front[1]);
-                current_back[2] = lround(float(current_back[2] * not_alpha) + current_front[2]);
-                current_back[3] = lround(float(current_back[3] * not_alpha) + current_front[3]);
+                current_back[0] = lround(float(current_back[0] * not_alpha) + current_front[0] * alpha);
+                current_back[1] = lround(float(current_back[1] * not_alpha) + current_front[1] * alpha);
+                current_back[2] = lround(float(current_back[2] * not_alpha) + current_front[2] * alpha);
+                current_back[3] = lround(float(current_back[3] * not_alpha) + current_front[3] * alpha);
             }
         }
     }
