@@ -57,13 +57,8 @@ void Alpha_blending(sf::Uint8* back, sf::Uint8* front, \
 
             __m128i not_alpha = _mm_subs_epu8(max, alpha);
 
-            union
-            {
-                unsigned char RGBA[16];
-                __m128i pixel_back;
-            };
 
-                    pixel_back  = _mm_set_epi8(current_back[15],  current_back[14],  current_back[13],  current_back[12],  \
+            __m128i pixel_back  = _mm_set_epi8(current_back[15],  current_back[14],  current_back[13],  current_back[12],  \
                                                current_back[11],  current_back[10],  current_back[9],   current_back[8],   \
                                                current_back[7],   current_back[6],   current_back[5],   current_back[4],   \
                                                current_back[3],   current_back[2],   current_back[1],   current_back[0]);
