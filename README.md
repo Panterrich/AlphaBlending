@@ -98,9 +98,9 @@ Let's check it on the tests.
 g++ alpha_blending.cpp main.cpp -O0 -g -o alpha_blending -lsfml-graphics 
 ```
 
-![alt text](Images/test_2(0).png "The hottest function")
-![alt text](Images/test_2(1).png "Important thing")
-![alt text](Images/test2_graph.svg "Graph profile")
+![alt text](Images/test_3(0).png "The hottest function")
+![alt text](Images/test_3(1).png "Important thing")
+![alt text](Images/test3_graph.svg "Graph profile")
 
 # With -O3
 
@@ -108,9 +108,9 @@ g++ alpha_blending.cpp main.cpp -O0 -g -o alpha_blending -lsfml-graphics
 g++ alpha_blending.cpp main.cpp -O3 -g -o alpha_blending -lsfml-graphics 
 ```
 
-![alt text](Images/test_2(2).png "The hottest function")
-![alt text](Images/test_2(3).png "Important thing")
-![alt text](Images/test2_1graph.svg "Graph profile")
+![alt text](Images/test_3(2).png "The hottest function")
+![alt text](Images/test_3(3).png "Important thing")
+![alt text](Images/test3_1graph.svg "Graph profile")
 
 # Result 
 
