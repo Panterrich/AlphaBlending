@@ -99,7 +99,7 @@ g++ alpha_blending.cpp main.cpp -O3 -g -o alpha_blending -lsfml-graphics
 
 # Result
 
-As a result, the program sped up by 8% (there were 30,5 billion instructions, now - 28,3 billion) without optimizations (-O0), and slowed down by 5% (there were 19,9 billion, now - 20,9 billion) with optimization (-O3).
+As a result, the program sped up by 10,5% (there were 26,3 billion instructions, now - 23,8 billion) without optimizations (-O0), and slowed down by 3% (there were 15,9 billion, now - 16,4 billion) with optimization (-O3).
 
 The program barely sped up(
 ![alt text](Images/Miku.png)
