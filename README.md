@@ -1,5 +1,16 @@
 # Alpha blending
 
+## Table of contents
+
+[Main page](https://github.com/Panterrich/Alpha_blending)
+
+[№0 optimization - the starting tests](https://github.com/Panterrich/Alpha_blending/tree/ver_0)
+
+[№1 optimization - reduce overhead costs](https://github.com/Panterrich/Alpha_blending/tree/ver_1)
+
+[№2 optimization - getting rid of divisions](https://github.com/Panterrich/Alpha_blending/tree/ver_2)
+
+[№3 optimization - SSE optinization](https://github.com/Panterrich/Alpha_blending/tree/ver_3)
 ## №2 optimization.
 
 It's time to change the algorithm and get rid of division.
