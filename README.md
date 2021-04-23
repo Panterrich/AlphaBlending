@@ -7,7 +7,7 @@ So this is the simplest version of the program that performs alpha blending.
 Example of the program result:
 ![alt text](Images/output.png "The funny picture")
 
-Now let's run the tests. Repeat alpha blending 100 times. (Read from files and write to files 1 time)
+Now let's run the tests. Repeat alpha blending 100 times. (Read from files 1 time, but don't write to files)
 
 # With -O0 
 ```makefile
